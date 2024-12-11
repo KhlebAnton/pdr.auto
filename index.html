@@ -16,7 +16,7 @@
             </a>
 
             <ul class="nav__list  mobile-hidden">
-                <li><a href="#" class="nav__item secelct">Услуги</a></li>
+                <li><a href="#" class="nav__item">Услуги</a></li>
                 <li><a href="#" class="nav__item">Акции</a></li>
                 <li><a href="#" class="nav__item">О сервисе</a></li>
                 <li><a href="#" class="nav__item">Контакты</a></li>
@@ -29,6 +29,7 @@
                     </svg>
                     <div class="phone_menu">
                         <a class="tel_link" href="tel:+79038896399">+7(903)889-63-99</a>
+                        <svg class="phone_menu__close" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#f50e3d"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                     </div>
                 </div>
                 <div class="menu ">
@@ -163,6 +164,17 @@
             </ul>
         </div>
     </footer>
+
+
+
+    <script>
+        const btnPhone = document.querySelector('.phone_btn');
+        const menuPhone = document.querySelector('.phone_menu');
+        btnPhone.addEventListener('click', ()=> {
+            menuPhone.classList.toggle('open');
+        });
+        
+    </script>
 </body>
 
 </html>
